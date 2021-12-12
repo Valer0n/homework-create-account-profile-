@@ -1,0 +1,219 @@
+:root {
+  --color-white: #ffffff;
+  --color-black: #1c1c1c;
+  --color-gray: #545454;
+  --color-light-gray: #969696;
+  --color-lighter-gray: #e4e4e4;
+  --color-blue: #007bff;
+  --color-red: #f83737;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  letter-spacing: -0.2px;
+  background-color: var(--color-white);
+  color: var(--color-gray);
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input,
+select {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-lighter-gray);
+  border-radius: 6px;
+}
+
+input:focus {
+  outline: 1px solid var(--color-blue);
+}
+
+select:focus {
+  outline: 1px solid var(--color-blue);
+}
+
+button:focus {
+  outline: 1px solid var(--color-blue);
+}
+
+.card-account h2 {
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: -0.4px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  color: var(--black);
+}
+
+.card-account__name {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.card-account__name input {
+  width: 245px;
+  height: 38px;
+  margin-top: 7px;
+  margin-right: 12px;
+}
+
+.card-account__email {
+  margin-bottom: 20px;
+}
+
+.card-account__email input {
+  width: 500px;
+  height: 38px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.card-account__email p {
+  font-size: 13px;
+  letter-spacing: -0.1px;
+  color: var(--color-light-gray);
+}
+
+.card-account__gender {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.radio {
+  position: relative;
+  display: flex;
+}
+
+.radio__input {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  z-index: -1;
+}
+
+.radio__checkmark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--color-lighter-gray);
+  border-radius: 50%;
+  background-color: var(--color-white);
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.radio__text {
+  align-self: center;
+}
+
+.radio__input:checked + .radio__checkmark {
+  border-color: transparent;
+  background-color: var(--color-blue);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.radio__input:checked + .radio__checkmark::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+}
+
+.card-account__gender .radio:not(:last-child) {
+  margin-right: 20px;
+}
+
+.card-accout__location {
+  display: flex;
+  margin-bottom: 20px;
+  margin-left: 8px;
+}
+
+.card-account__country label {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.card-account__country select {
+  width: 245px;
+  height: 38px;
+  margin-right: 4px;
+  margin-top: 7px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  color: var(--color-gray);
+  opacity: 0.8;
+}
+
+.card-account__city input {
+  width: 245px;
+  height: 38px;
+  margin-top: 7px;
+}
+
+.card-account__sign-up {
+  width: 500px;
+  height: 38px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: var(--color-red);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-lighter-gray);
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin-bottom: 28px;
+}
+
+.card-account__rule {
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-account__rule p {
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: var(--color-light-gray);
+}
+
+.card-account__rule a {
+  color: var(--color-blue);
+  text-decoration: none;
+}
+
+.card-account__log-in::before {
+  content: "";
+  height: 1px;
+  background-color: var(--color-lighter-gray);
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.card-account__log-in {
+  text-align: center;
+  padding-bottom: 14px;
+}
+
+.card-account__log-in a {
+  text-decoration: none;
+  letter-spacing: -0.1px;
+  color: var(--color-blue);
+}

@@ -1,0 +1,135 @@
+:root {
+  --color-white: #ffffff;
+  --color-black: #1c1c1c;
+  --color-gray: #545454;
+  --color-light-gray: #969696;
+  --color-lighter-gray: #e4e4e4;
+  --color-blue: #007bff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  letter-spacing: -0.2px;
+  background-color: var(--color-white);
+  color: var(--color-gray);
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input,
+select {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-lighter-gray);
+  border-radius: 6px;
+}
+
+input:focus {
+  outline: 1px solid var(--color-blue);
+}
+
+select:focus {
+  outline: 1px solid var(--color-blue);
+}
+
+button:focus {
+  outline: 1px solid var(--color-blue);
+}
+
+.profile h2 {
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: -0.4px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  color: var(--color-black);
+}
+
+.profile__hero p {
+  font-size: 13px;
+  letter-spacing: -0.1px;
+  color: var(--color-light-gray);
+}
+
+.profile__hero {
+  display: flex;
+}
+
+.profile__hero img {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.hero__wrapper {
+  display: flex;
+  align-self: center;
+}
+
+.profile__hero input {
+  width: 138px;
+  height: 30px;
+  margin-bottom: 9px;
+  margin-right: 10px;
+}
+
+.hero__input {
+  position: relative;
+}
+
+.hero__input::after {
+  content: url("../img/photo-camera.svg");
+  position: absolute;
+  top: 6px;
+  bottom: 0;
+  right: 22px;
+  width: 16px;
+  height: 16px;
+}
+
+.hero__trash {
+  width: 30px;
+  height: 30px;
+  background: var(--color-white);
+  border: 1px solid var(--color-lighter-gray);
+  border-radius: 6px;
+}
+
+.hero__trash::before {
+  content: url(../img/trash.svg);
+  width: 16px;
+  height: 16px;
+}
+
+form input,
+select {
+  width: 245px;
+  height: 38px;
+  margin-top: 7px;
+}
+.profile__wrapper {
+  display: flex;
+  margin-bottom: 20px;
+}
+.first-input {
+  margin-right: 10px;
+}
+
+.profile__empty input {
+  width: 150px;
+  height: 38px;
+}
+
+.profile__country select {
+  color: var(--color-gray);
+  opacity: 0.8;
+}
